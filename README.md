@@ -9,3 +9,5 @@ The code is cleaning and will be public soon!
 
 ## Checkpoint
 In addition, here we provide raw checkpoint and hugging face tensors:
+Pytorch raw checkpoint: [Here](https://drive.google.com/file/d/1RBsDZvFqJiAbbhnXTpSZs_uC-WKWrAJx/view?usp=sharing)
+Hugging face: [TODO]()
