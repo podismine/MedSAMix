@@ -3,6 +3,10 @@
 We find that while MedSAM and other fine-tuned SAM-based models perform well on most tasks within their respective domains, they can struggle to generalize to partial or unseen tasks, sometimes even underperforming the original SAM. 
 
 To address this limitation, we propose MedSAMix, a model-merging approach designed to enhance generalization across diverse tasks.
+![Our MedSAMix](fig/model.png)
+
+![Performance of different SAM-based models](fig/git_fig1.png)
+
 
 ## Code
 The code is cleaning and will be public soon!
