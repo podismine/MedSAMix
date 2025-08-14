@@ -5,8 +5,8 @@ We find that while MedSAM and other fine-tuned SAM-based models perform well on 
 To address this limitation, we propose MedSAMix, a model-merging approach designed to enhance generalization across diverse tasks.
 ![Our MedSAMix](fig/model.png)
 
-![Performance of different SAM-based models](fig/git_fig1.png)
 
+<img src="fig/git_fig1.png" alt="Performance of different SAM-based models" width="50%">
 
 ## Code
 The code is cleaning and will be public soon!
