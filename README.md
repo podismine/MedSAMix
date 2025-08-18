@@ -1,4 +1,4 @@
-[MedSAMix: A Training-Free Model Merging Approach for Medical Image Segmentation]()
+[MedSAMix: A Training-Free Model Merging Approach for Medical Image Segmentation](https://arxiv.org/abs/2508.11032)
 
 We find that while MedSAM and other fine-tuned SAM-based models perform well on most tasks within their respective domains, they can struggle to generalize to partial or unseen tasks, sometimes even underperforming the original SAM. 
 
