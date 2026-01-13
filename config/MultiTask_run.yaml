@@ -1,0 +1,66 @@
+models:
+  - "medsam.pth"
+  - "vit_b_medicosam.pt" 
+  - "sam-med2d_b.pth"
+base_model: "sam_vit_b_01ec64.pth" 
+random_seed: 42
+strategy: lfs_multiobj
+merging_method:
+  linear:
+    weights:
+      min: 0.0
+      max: 1.0
+  
+  task_arithmetic:
+    scaling_coefficient:
+      min: 0.0
+      max: 1.0
+  
+  ties:
+    param_value_mask_rate:
+      min: 0.0
+      max: 0.99
+    scaling_coefficient:
+      min: 0.0
+      max: 1.0
+  
+  slerp:
+    slerp_t:
+      min: 0.0
+      max: 1.0
+
+layer_granularity: 2
+component_granularity: "unified"
+n_trials: 200
+min_budget: 50
+max_budget: 1000
+total_budget: 20000
+eta: 3
+random_init_points: 10
+n_workers: 4
+evaluation:
+  data_path: "/path/to/data"
+  tasks:
+    - task: "Fundus_Domain1_cup"
+      weight: 1.0
+    - task: "Tumor_T1"
+      weight: 1.0
+    - task: "Topcow"
+      weight: 1.0
+    - task: "Lateral_Ventricle_heldout"
+      weight: 1.0
+    - task: "Rat_4"
+      weight: 1.0
+    - task: "MSD_Heart"
+      weight: 1.0
+    - task: "NasalSeg_5"
+      weight: 1.0
+    - task: "PROMISE12"
+      weight: 1.0
+    
+  metrics:
+    - "accuracy"
+    - "iou"
+    - "f1_score"
+
+output_path: "/path/to/output"
