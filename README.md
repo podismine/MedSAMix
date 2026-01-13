@@ -11,6 +11,8 @@ To address this limitation, we propose MedSAMix, a model-merging approach design
 ## Code
 The code is cleaning and will be public soon!
 
+**We currently uploaded basic codes. Some will be refined later.**
+
 ## Checkpoint
 In addition, here we provide raw checkpoint and hugging face tensors:
 
